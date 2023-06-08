@@ -1,0 +1,100 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\.58a2c6117aa5a24e40dd6344d27fb83a853ef727-audit.json",
+    "files": [
+        {
+            "date": 1685703696390,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-02-06-17-error.log",
+            "hash": "161cbe830dc4a680b6dc4a7714fbef16dc53eb032b3245fc50a28a76feb94239"
+        },
+        {
+            "date": 1685707399401,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-02-06-18-error.log",
+            "hash": "f007031850bdb8bb29799197c38db8f81c97319cdb78deb96e114cfe1d8843a3"
+        },
+        {
+            "date": 1685728657122,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-02-06-23-error.log",
+            "hash": "25c48c00f99a872518ee48fdbded98e2c67d851143d441d0930ff939f29fcd7f"
+        },
+        {
+            "date": 1685730822256,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-03-06-00-error.log",
+            "hash": "51b0d75dfc1d43b049f4aabf447c2d4d0341616bff5f710c035d9dc7f576305f"
+        },
+        {
+            "date": 1685732504266,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-03-06-01-error.log",
+            "hash": "e3a1ada2a2403ffcb9ba935a729fd63282f11c1358f8fc2a3ec9c385de45bcb1"
+        },
+        {
+            "date": 1685767411072,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-03-06-10-error.log",
+            "hash": "db2c260d8744ba335f6bbdeaed5507b479f0e31f6b5d075499b538e9d2aa210e"
+        },
+        {
+            "date": 1685994554213,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-06-06-01-error.log",
+            "hash": "ae5513bda07bab998e92ab88d5685c9dc2f9b04646d23f98e4e5288732aa8658"
+        },
+        {
+            "date": 1686028689449,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-06-06-11-error.log",
+            "hash": "751fb53b252e475a81b6491d7c496f51e8bec466da8f20665724c5a1cec109b0"
+        },
+        {
+            "date": 1686031235970,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-06-06-12-error.log",
+            "hash": "77d54576d364c6e98a1cc42aafab81cd8180592fa438ecaab57b620276eadc57"
+        },
+        {
+            "date": 1686047095917,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-06-06-16-error.log",
+            "hash": "f2c29fc5327c274f4ced1b89c7ce732e07d66303e231761975be008579e5cab7"
+        },
+        {
+            "date": 1686049457093,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-06-06-17-error.log",
+            "hash": "54a3763c7ec5f99454dc50d6823e57b42a1d0ae7037fbd60976279b49680c5a3"
+        },
+        {
+            "date": 1686071608834,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-06-06-23-error.log",
+            "hash": "380683bb21e60a3bd4c2b123a03b0bd647803f408d19137878fda3a5b0afec0a"
+        },
+        {
+            "date": 1686074419059,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-07-06-00-error.log",
+            "hash": "a91ce26b744db310b54a581193aa3fbc43dab4a5ad2331fb9de80f8a29893044"
+        },
+        {
+            "date": 1686152152704,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-07-06-21-error.log",
+            "hash": "c55b3076992fd5ba401b82656285fc02f24ab2699f021db7a702cd86246420ac"
+        },
+        {
+            "date": 1686158741409,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-07-06-23-error.log",
+            "hash": "d84fc8589755457a0043f0cffb54f5282ec1e8b9de1984de677ba9aa3afbdb4c"
+        },
+        {
+            "date": 1686164248471,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-08-06-00-error.log",
+            "hash": "441df3fcf8deebaaaf1ccd6cdfabfe7b9a24c00e61302fd8b27541a9c46de7cc"
+        },
+        {
+            "date": 1686203677707,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-08-06-11-error.log",
+            "hash": "2ca6071ef835fb236c59cfd4dd14028d7feb528527e309b9f6b529812091330f"
+        },
+        {
+            "date": 1686204072983,
+            "name": "D:\\Next-label-web developer\\pratice\\yarn-versity\\logs\\winston\\errors\\phu--2023-08-06-12-error.log",
+            "hash": "d1459d392e83183d81d5fa527f4e2b17bdfb7ad8f78d3f2e4aaafb9d9c46c97a"
+        }
+    ],
+    "hashType": "sha256"
+}
