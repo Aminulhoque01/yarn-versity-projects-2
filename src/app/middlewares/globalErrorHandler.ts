@@ -8,6 +8,7 @@ import ApiError from '../../errors/ApiError';
 import { errorlogger } from '../../shared/loger';
 import { ZodError } from 'zod';
 import handleZodError from '../../errors/handleZodError';
+import handlerCastError from '../../errors/handlerCastError';
 
 const globalErrorHandler: ErrorRequestHandler = (
   error,
@@ -30,6 +31,11 @@ const globalErrorHandler: ErrorRequestHandler = (
     errorMessage = simplifiedError.errorMessage;
   } else if (error instanceof ZodError) {
     const simplifiedError = handleZodError(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessage = simplifiedError.errorMessage;
+  } else if (error?.name === 'CastError') {
+    const simplifiedError = handlerCastError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessage = simplifiedError.errorMessage;
