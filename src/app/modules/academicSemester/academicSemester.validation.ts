@@ -62,6 +62,14 @@ const updateAcademicSemesterZodSchema = z
     {
       message: 'Either both title and should be provide or neither',
     }
+  )
+  .refine(
+    data =>
+      (data.body.title && data.body.code) ||
+      (!data.body.title && !data.body.code),
+    {
+      message: 'Either both title and should be provide or neither',
+    }
   );
 
 export const AcademicSemesterValidation = {
