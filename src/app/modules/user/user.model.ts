@@ -19,6 +19,7 @@ const userSchema = new Schema<IUser, Record<string, never>, UserModel>(
     password: {
       type: String,
       required: true,
+      select: 0,
     },
     needsPasswordChange: {
       type: Boolean,
