@@ -2,13 +2,15 @@ import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
 import { User } from '../user/user.model';
 import {
+  IChangePassword,
   ILoginUser,
   ILoginUserResponse,
   IRefreshTokenResponse,
 } from './auth.interface';
-import { Secret } from 'jsonwebtoken';
+import { JwtPayload, Secret } from 'jsonwebtoken';
 import config from '../../../config';
 import { jwtHelpers } from '../../../helpers/jwthelpers';
+// import bcrypt from 'bcrypt'
 
 const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   const { id, password } = payload;
@@ -94,7 +96,53 @@ const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   };
 };
 
+const changePassword = async (
+  user: JwtPayload | null,
+  payload: IChangePassword
+): Promise<void> => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { oldPassword, newPassword } = payload;
+
+  //checking is user exist
+  const isUserExist = await User.findOne({ id: user?.userId }).select(
+    '+password'
+  );
+  // console.log(isUserExist)
+
+  if (!isUserExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
+  }
+
+  // checking old password
+  if (
+    isUserExist.password &&
+    !(await User.isPasswordMatched(oldPassword, isUserExist.password))
+  ) {
+    throw new ApiError(httpStatus.UNAUTHORIZED, 'old password is incorrect');
+  }
+
+  // // hash password before saving
+  // const newHashedPassword = await bcrypt.hash(newPassword, Number(config.bcrypt_salt_rounds as string))
+
+  // const query = {id: user?.userId};
+  // const updateData ={
+  //   password: newHashedPassword,
+  //   needsPasswordChange: false,
+  //   passwordChangedAt: new Date()
+  // }
+
+  // // update password
+  // await User.findOneAndUpdate(query,updateData)
+
+  //data update
+  isUserExist.needsPasswordChange = false;
+  //line ta hobe => isUserExist.password = newPassword
+  //updating using save()
+  isUserExist.save();
+};
+
 export const AuthService = {
   loginUser,
   refreshToken,
+  changePassword,
 };
