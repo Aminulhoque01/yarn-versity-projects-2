@@ -1,4 +1,0 @@
-Sat Jun 10 2023  21 : 9 : 5 [right meow!] error: Cast to ObjectId failed for value "648429e8b27dc9bf3cd1" (type string) at path "_id" for model "AcademicSemester"
-Sat Jun 10 2023  21 : 13 : 39 [right meow!] error: Cast to ObjectId failed for value "648429e8b27dc9bf3cd1" (type string) at path "_id" for model "AcademicSemester"
-Sat Jun 10 2023  21 : 35 : 35 [right meow!] error: Cast to ObjectId failed for value "648429e8b27dc9bf3cd1" (type string) at path "_id" for model "AcademicSemester"
-Sat Jun 10 2023  21 : 51 : 57 [right meow!] error: Cast to ObjectId failed for value "648429e8b27dc9bf3cd1" (type string) at path "_id" for model "AcademicSemester"

@@ -1,7 +1,0 @@
-Tue Jun 13 2023  15 : 21 : 24 [right meow!] error: E11000 duplicate key error collection: yarn-versity.users index: id_1 dup key: { id: "25 01 00026" }
-Tue Jun 13 2023  15 : 29 : 12 [right meow!] error: E11000 duplicate key error collection: yarn-versity.users index: id_1 dup key: { id: "25 01 00026" }
-Tue Jun 13 2023  15 : 29 : 50 [right meow!] error: E11000 duplicate key error collection: yarn-versity.users index: id_1 dup key: { id: "25 01 00026" }
-Tue Jun 13 2023  15 : 30 : 15 [right meow!] error: E11000 duplicate key error collection: yarn-versity.users index: id_1 dup key: { id: "25 01 00026" }
-Tue Jun 13 2023  15 : 45 : 21 [right meow!] error: E11000 duplicate key error collection: yarn-versity.users index: id_1 dup key: { id: "25 01 00026" }
-Tue Jun 13 2023  15 : 48 : 15 [right meow!] error: E11000 duplicate key error collection: yarn-versity.users index: id_1 dup key: { id: "25 01 00026" }
-Tue Jun 13 2023  15 : 59 : 12 [right meow!] error: E11000 duplicate key error collection: yarn-versity.users index: id_1 dup key: { id: "25 01 00002" }

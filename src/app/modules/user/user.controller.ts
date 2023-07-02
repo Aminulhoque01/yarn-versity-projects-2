@@ -7,8 +7,6 @@ import { IUser } from './user.initerface';
 
 const createStudent: RequestHandler = catchAsync(
   async (req: Request, res: Response) => {
-    console.log(req.cookies, 'cookies');
-
     const { student, ...userData } = req.body;
     const result = await UserServices.createStudent(student, userData);
 
