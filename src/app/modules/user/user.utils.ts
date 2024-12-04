@@ -1,4 +1,4 @@
-import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
+// import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
 import { User } from './user.model';
 
 export const findLastStudentId = async (): Promise<string | undefined> => {
@@ -9,22 +9,22 @@ export const findLastStudentId = async (): Promise<string | undefined> => {
   return lastStudent?.id ? lastStudent.id.substring(4) : undefined;
 };
 
-export const generateStudentId = async (
-  academicSemester: IAcademicSemester | null
-): Promise<string> => {
-  const currentId =
-    (await findLastStudentId()) || (0).toString().padStart(5, '0');
+// export const generateStudentId = async (
+//   academicSemester: IAcademicSemester | null
+// ): Promise<string> => {
+//   const currentId =
+//     (await findLastStudentId()) || (0).toString().padStart(5, '0');
 
-  let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
-  //space -- pora jabe na
-  incrementedId = `${academicSemester?.year.substring(2)}${
-    academicSemester?.code
-  }${incrementedId}`;
+//   let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
+//   //space -- pora jabe na
+//   incrementedId = `${academicSemester?.year.substring(2)}${
+//     academicSemester?.code
+//   }${incrementedId}`;
 
-  return incrementedId;
-};
+//   return incrementedId;
+// };
 
-export const findLastFacultyId = async (): Promise<string | undefined> => {
+export const findLastEventId = async (): Promise<string | undefined> => {
   const lastFaculty = await User.findOne({ role: 'faculty' }, { id: 1, _id: 0 })
     .sort({
       createdAt: -1,
@@ -44,12 +44,12 @@ export const findLastAdminId = async (): Promise<string | undefined> => {
   return lastFaculty?.id ? lastFaculty.id.substring(2) : undefined;
 };
 
-export const generateFacultyId = async (): Promise<string> => {
+export const generateEventId = async (): Promise<string> => {
   const currentId =
-    (await findLastFacultyId()) || (0).toString().padStart(5, '0');
+    (await findLastEventId()) || (0).toString().padStart(5, '0');
   let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
 
-  incrementedId = `F-${incrementedId}`;
+  incrementedId = `E-${incrementedId}`;
   return incrementedId;
 };
 
